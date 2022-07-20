@@ -39,14 +39,14 @@ This contains my solution for pandas challenge (Module 4)
 
 District summary should include the following metrics:
 
-*Total schools
-*Total students
-*Total budget
-*Average math score
-*Average reading score
-*% passing math (the percentage of students who passed math)
-*% passing reading (the percentage of students who passed reading)
-*% overall passing (the percentage of students who passed math AND reading)
+*Total schools.
+*Total students.
+*Total budget.
+*Average math score.
+*Average reading score.
+*% passing math (the percentage of students who passed math).
+*% passing reading (the percentage of students who passed reading).
+*% overall passing (the percentage of students who passed math AND reading).
 
 
 
@@ -101,19 +101,19 @@ District summary should include the following metrics:
 
 create a dataframe that include the following metrics: 
 
-*School name
-*School type
-*Total students
-*Total school budget
-*Per student budget
-*Average math score
-*Average reading score
-*% passing math (the percentage of students who passed math)
-*% passing reading (the percentage of students who passed reading)
-*% overall passing (the percentage of students who passed math AND reading)
+*School name.
+*School type.
+*Total students.
+*Total school budget.
+*Per student budget.
+*Average math score.
+*Average reading score.
+*% passing math (the percentage of students who passed math).
+*% passing reading (the percentage of students who passed reading).
+*% overall passing (the percentage of students who passed math AND reading).
 
         # School name
-    school_name = school_data_complete.set_index("school_name").groupby(["school_name"])
+        school_name = school_data_complete.set_index("school_name").groupby(["school_name"])
 
         # School type
         school_type = school_data_df.set_index("school_name")["type"]
@@ -163,16 +163,16 @@ create a dataframe that include the following metrics:
 
 create a dataframe that include the following metrics: 
 
-*School name
-*School type
-*Total students
-*Total school budget
-*Per student budget
-*Average math score
-*Average reading score
-*% passing math (the percentage of students who passed math)
-*% passing reading (the percentage of students who passed reading)
-*% overall passing (the percentage of students who passed math AND reading)
+*School name.
+*School type.
+*Total students.
+*Total school budget.
+*Per student budget.
+*Average math score.
+*Average reading score.
+*% passing math (the percentage of students who passed math).
+*% passing reading (the percentage of students who passed reading).
+*% overall passing (the percentage of students who passed math AND reading).
 
         #sort the schools based on % overall passing
         top_performing_schools = school_summary.sort_values("% Overall Passing", ascending=False)
@@ -184,16 +184,16 @@ create a dataframe that include the following metrics:
 
 create a dataframe that include the following metrics:
 
-*School name
-*School type
-*Total students
-*Total school budget
-*Per student budget
-*Average math score
-*Average reading score
-*% passing math (the percentage of students who passed math)
-*% passing reading (the percentage of students who passed reading)
-*% overall passing (the percentage of students who passed math AND reading)
+*School name.
+*School type.
+*Total students.
+*Total school budget.
+*Per student budget.
+*Average math score.
+*Average reading score.
+*% passing math (the percentage of students who passed math).
+*% passing reading (the percentage of students who passed reading).
+*% overall passing (the percentage of students who passed math AND reading).
 
         #sort the schools based on % overall passing
         Bottom_performing_schools = school_summary.sort_values("% Overall Passing", ascending=True)
@@ -233,11 +233,11 @@ Create a DataFrame that lists the average reading score for students of each gra
 
 Create a table that breaks down school performance based on average spending ranges (per student). Use your judgment to create four bins with reasonable cutoff values to group school spending. Include the following metrics in the table:
 
-*Average math score
-*Average reading score
-*% passing math (the percentage of students who passed math)
-*% passing reading (the percentage of students who passed reading)
-*% overall passing (the percentage of students who passed math AND reading)
+*Average math score.
+*Average reading score.
+*% passing math (the percentage of students who passed math).
+*% passing reading (the percentage of students who passed reading).
+*% overall passing (the percentage of students who passed math AND reading).
 
         # Create Bins
         bins = [0, 585, 630, 645, 680]
